@@ -45,5 +45,3 @@ TEST(create_staff, ok){
     new_staff->experience = input_info_value(input_file, string_helper_ptr);
     EXPECT_EQ(new_staff->experience, 8);
 }
-
-TEST
