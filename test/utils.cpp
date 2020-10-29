@@ -15,11 +15,11 @@ TEST(create_list, ok){
     EXPECT_NE(list, nullptr);
 }
 
-TEST(create_database, ok){
-    FILE* input_file = fopen("../../test1.txt", "r+");
-    struct List *list = create_database(input_file);
-    EXPECT_NE(list, nullptr);
-}
+//TEST(create_database, ok){
+//    FILE* input_file = fopen("../../test1.txt", "r+");
+//    struct List *list = create_database(input_file);
+//    EXPECT_NE(list, nullptr);
+//}
 
 TEST(create_staff, ok){
     char string_helper_ptr[MAX_STRING_SIZE] = "";
