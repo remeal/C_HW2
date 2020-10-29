@@ -25,7 +25,7 @@ TEST(create_database, ok){
 TEST(create_staff, ok){
     char string_helper_ptr[MAX_STRING_SIZE] = "";
     FILE* input_file = fopen("../../test1.txt", "r+");
-    struct Staffs *new_staff = static_cast<Staffs *>(malloc(sizeof(struct Staffs)));
+    auto *new_staff = static_cast<Staffs *>(malloc(sizeof(struct Staffs)));
     new_staff->name = input_info_ptr(input_file, string_helper_ptr);
     std::string name = new_staff->name;
     EXPECT_EQ(name, "Ivan");
@@ -37,7 +37,7 @@ TEST(create_staff, ok){
     new_staff->age = input_info_value(input_file, string_helper_ptr);
     EXPECT_EQ(new_staff->age, 50);
     new_staff->salary = input_info_int(input_file, string_helper_ptr);
-    int salary = new_staff->salary;
+    unsigned int salary = new_staff->salary;
     EXPECT_EQ(salary, 45000);
     new_staff->position = input_info_ptr(input_file, string_helper_ptr);
     std::string position = new_staff->position;
