@@ -29,4 +29,3 @@ script:
   - make
 after_success:
   - cd "${TRAVIS_BUILD_DIR}"
-  - bash <(curl -s https://codecov.io/bash) -f "C_HW1/src/*"
