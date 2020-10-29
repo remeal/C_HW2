@@ -1,0 +1,12 @@
+[src/main.c:16]: (style) Unused variable: stop_parall
+[src/utils.c:71] -> [src/utils.c:67]: (warning) Either the condition '!string_helper' is redundant or there is possible null pointer dereference: string_helper.
+[src/utils.c:71] -> [src/utils.c:69]: (warning) Either the condition '!string_helper' is redundant or there is possible null pointer dereference: string_helper.
+[src/utils.c:67]: (warning) fscanf() without field width limits can crash with huge input data.
+[src/utils.c:78]: (warning) fscanf() without field width limits can crash with huge input data.
+[src/utils.c:95]: (warning) fscanf() without field width limits can crash with huge input data.
+[src/utils.c:17]: (error) Memory leak: list
+[src/utils.c:72]: (error) Memory leak: struct_el
+[src/with_fork.c:46] -> [src/with_fork.c:45]: (style, inconclusive) Same expression used in consecutive assignments of 'max' and 'min'.
+[src/without_fork.c:18] -> [src/without_fork.c:17]: (style) Same expression used in consecutive assignments of 'max' and 'min'.
+[test/without_fork.cpp:7]: (style) The function 'TEST' is never used.
+(information) Cppcheck cannot find all the include files (use --check-config for details)
