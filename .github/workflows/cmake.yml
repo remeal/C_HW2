@@ -39,7 +39,7 @@ jobs:
       # Execute the build.  You can specify a specific target with "--target <NAME>"
       run: cmake --build . --config $BUILD_TYPE
     - name: cppcheck
-      uses: deep5050/cppcheck-action@develop
+      uses: deep5050/cppcheck-action@master
 
     - name: Test
       working-directory: ${{runner.workspace}}/build
