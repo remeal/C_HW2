@@ -43,10 +43,6 @@ jobs:
     - name: checkout repo
       users: actions/checkout@master
 
-    - name: Run Checkov action
-      id: checkov
-      uses: bridgecrewio/checkov-action@master
-
     - name: Test
       working-directory: ${{runner.workspace}}/build
       shell: bash
